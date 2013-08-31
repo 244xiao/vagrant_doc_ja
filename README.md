@@ -88,7 +88,7 @@
  * Providers
  * Provisioners
  * Packaging & Distribution
-* Debugging
+* [Debugging](./doc/debugging/debugging.md)
 
 
 ## ライセンス
