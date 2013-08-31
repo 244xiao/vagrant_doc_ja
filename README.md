@@ -45,7 +45,7 @@
  * Vagrant Settings
 * [Boxes](./doc/boxes/boxes.md)
  * [Box File Format](./doc/boxes/format.md)
-* Provisioning
+* [Provisioning](./doc/provisioning/provisioning.md)
  * Basic Usage
  * Shell
  * Ansible
