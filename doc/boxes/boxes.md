@@ -6,7 +6,7 @@ Box は Vagrant マシンを構築するためのスケルトンです。作業�
 
 Box は [Provider 固有](http://docs.vagrantup.com/v2/providers/)です。そのため、使っている Provider に合わせて適切な Box を取得する必要があります。
 
-Box の正確なファイルフォーマットに興味があるならば、[専用のページ](http://docs.vagrantup.com/v2/boxes/format.html)があります。これは高度なトピックであるため、一般的なユーザーが知る必要はありません。
+Box の正確なファイルフォーマットに興味があるならば、[専用のページ](./format.html)があります。これは高度なトピックであるため、一般的なユーザーが知る必要はありません。
 
 
 ## BOX の追加
@@ -30,7 +30,7 @@ Box が異なる Provider 向けの Box であれば、同じ名前でも複数�
 
 ## BOX のリスト
 
-Vagrant では `vagrant box list` を使ってローカルにインストールされている Box を表示します。：
+Vagrant では `vagrant box list` を使ってローカルにインストールされている Box を表示します：
 
 ```
 $ vagrant box list
@@ -52,5 +52,5 @@ $ vagrant box remove precise64 virtualbox
 
 
 ## Providerのオプションパラメータ？
-Vagrant の将来のリリースでは、Box を削除する時の Provider パラメーターはオプションになります。この場合、 Vagrant は削除することのできる Box のリストを表示し、ユーザーにどれを削除したいかザを尋ねます。現在、これは実装されていません。
+Vagrant の将来のリリースでは、Box を削除する時の Provider パラメーターはオプションになります。この場合、 Vagrant は削除することのできる Box のリストを表示し、ユーザーにどれを削除したいかを尋ねます。現在、これは実装されていません。
 

@@ -1,12 +1,12 @@
-# BOX �t�@�C���t�H�[�}�b�g
+# BOX ファイルフォーマット
 
-�ߋ��A Box �� VirtualBox ���G�N�X�|�[�g���� [tar �t�@�C��](http://en.wikipedia.org/wiki/Tar_(computing))�����ł����BVagrant �͕����� Provider ���T�|�[�g�������߁A���� Box �t�@�C���͊e Provider ���ɈقȂ� tar �t�@�C���ɂȂ��Ă��܂��B�܂� Box �� tar �t�@�C���ł����A���݁A�I�v�V������ [gzip](http://en.wikipedia.org/wiki/Gzip) ���k������܂��B
+過去、 Box は VirtualBox がエクスポートする [tar ファイル](http://ja.wikipedia.org/wiki/Tar)だけでした。Vagrant は複数の Provider をサポートしたため、現在 Box ファイルは各 Provider 毎に異なる tar ファイルになっています。まだ Box は tar ファイルですが、現在、オプションで [gzip](http://ja.wikipedia.org/wiki/Gzip) 圧縮もされます。
 
-Vagrant 1.0.x �� VirtualBox �̂��߂ɍ��ꂽ Box �t�@�C���� Vagrant 1.1 + �� VirtualBox Provider �ł����삵�����܂��B
+Vagrant 1.0.x と VirtualBox のために作られた Box ファイルは Vagrant 1.1 + と VirtualBox Provider でも動作し続けます。
 
-Box ���ɕK�v�ȗB��̃t�@�C���� "metadata.json" �t�@�C���ł��B���� [JSON](http://www.json.org/) �t�@�C���� Box �Ɋւ��郁�^�f�[�^���܂ނ��Ƃ̂ł���g�b�v���x���̃I�u�W�F�N�g�������Ă��܂��BVagrant �ł̓��^�f�[�^�� "provider" �L�[�� ����Box �� Provider �̖��O���K�v�ł��B
+Box 内に必要な唯一のファイルは "metadata.json" ファイルです。この [JSON](http://www.json.org/) ファイルは Box に関するメタデータを含むことのできるトップレベルのオブジェクトを持っています。Vagrant ではメタデータに "provider" キーと そのBox の Provider の名前が必要です。
 
-VirtualBox �� Box �� "metadata.json" �t�@�C���F
+VirtualBox の Box の "metadata.json" ファイル：
 
 ```
 {
@@ -14,5 +14,5 @@ VirtualBox �� Box �� "metadata.json" �t�@�C���F
 }
 ```
 
-Box ��ǉ�����Ƃ��A metadata.json �t�@�C�������݂��Ȃ��A�܂��͏��Ȃ��Ƃ� "provider" �L�[�����L���� JSON ���܂܂�Ă��Ȃ��t�@�C���̏ꍇ�́A Vagrant �̓G���[�ɂȂ�܂��B
+Box を追加するとき、 metadata.json ファイルが存在しない、または少なくとも "provider" キーを持つ有効な JSON が含まれていないファイルの場合は、 Vagrant はエラーになります。
 
