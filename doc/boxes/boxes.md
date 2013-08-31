@@ -36,13 +36,14 @@ Vagrant では `vagrant box list` を使ってローカルにインストール�
 $ vagrant box list
 precise64 (virtualbox)
 precise64 (vmware_fusion)
-Vagrant はすべての Box と括弧内に Provider を一覧表示します。
 ```
+
+Vagrant はすべての Box と括弧内に Provider を一覧表示します。
 
 
 ## BOX の削除
 
-Box の追加と同じくらい簡単に Box の削除を行なうことができます。
+Box の追加と同じくらい簡単に Box の削除を行なうことができます：
 
 ```
 $ vagrant box remove precise64 virtualbox
@@ -52,5 +53,5 @@ $ vagrant box remove precise64 virtualbox
 
 
 ## Providerのオプションパラメータ？
-Vagrant の将来のリリースでは、Box を削除する時の Provider パラメーターはオプションになります。この場合、 Vagrant は削除することのできる Box のリストを表示し、ユーザーにどれを削除したいかを尋ねます。現在、これは実装されていません。
+Vagrant の将来のリリースでは、Box を削除する時の Provider パラメーターは任意になります。この場合、 Vagrant は削除することのできる Box のリストを表示し、ユーザーにどれを削除したいかを尋ねます。現在、これは実装されていません。
 
