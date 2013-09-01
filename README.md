@@ -46,7 +46,7 @@
 * [Boxes](./doc/boxes/boxes.md)
  * [Box File Format](./doc/boxes/format.md)
 * [Provisioning](./doc/provisioning/provisioning.md)
- * Basic Usage
+ * [Basic Usage](./doc/provisioning/basic_usage.md)
  * Shell
  * Ansible
  * Chef Solo
