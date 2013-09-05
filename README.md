@@ -67,7 +67,7 @@
  * Basic Usage
  * Configuration
  * Custom Provider
-* VirtualBox
+* [VirtualBox](./doc/virtualbox/virtualbox.md)
  * Usage
  * Boxes
  * Configuration
